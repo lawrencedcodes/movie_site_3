@@ -62,7 +62,7 @@ function getMovie() {
                 <p>${movie.Plot}</p>
                 <hr/>
                 <a href="http://imdb.com/title/${movie.ID}" target="_blank" class="btn btn-primary">View IMDB</a>
-                <a href="index.html class="btn btn-default">Search Again</a>
+                <a href="index.html" class="btn btn-success">Search Again</a>
             </div>
         </div>
      `;
