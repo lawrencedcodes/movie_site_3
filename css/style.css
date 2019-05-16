@@ -3,22 +3,30 @@ body {
 }
 #mainsearch {
     background: #494E6B;
-    color: white;
+    color: #E7DFDD;
 }
 #movies h5 {
-    color: white;
+    color: #E7DFDD;
 }
 #movies img, #movie img {
     width: 100%;
 }
-
+#movie  h2{
+    background: #494E6B;
+    color: #E7DFDD;
+}
+#movie h3 {
+    color: #E7DFDD;;
+    width: 10rem;   
+}
+#movie p {
+    color: #E7DFDD;
+}
 @media (min-width: 960px) {
-#movies .col-md-3 .well {
-    height: 390px;
-
-}
-
-#movies .col-md-3 img {
-    height: 240px;
-}
+    #movies .col-md-3 .well {
+        height: 390px;
+    }
+    #movies .col-md-3 img {
+        height: 240px;
+    }
 }
