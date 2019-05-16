@@ -26,3 +26,27 @@ function getMovies(searchText) {
         $('#movies').html(output);
     });
 }
+
+function movieSelected(id) {
+    sessionStorage.setItem('movieID',id);
+    window.location = 'movie.html';
+    return false;
+}
+
+function getMovie() {
+    let movieID = sessionStorage.getItem('movieID');
+    var promise1 = axios.get('http://www.omdbapi.com/?apikey=fea6300d&i='+movieID);
+    promise1.then(function (response) {
+    let movie = response.data;
+    let output = `
+        <div class="row">
+            <div class="col-md-4">
+                <img src="${movie.Poster}" class="thumbnail">
+            </div>
+            <div class="col-md-8">
+            </div>
+        </div>
+     `;
+     $('#movie').html(output);
+    });
+}
