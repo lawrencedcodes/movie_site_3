@@ -1,0 +1,20 @@
+{
+  "name": "movie_site",
+  "version": "1.0.0",
+  "description": "Movie site using axios, jquery, OMDb API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Movie",
+    "Ajax",
+    "Jquery",
+    "API"
+  ],
+  "author": "Lawrence Lockhart",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
